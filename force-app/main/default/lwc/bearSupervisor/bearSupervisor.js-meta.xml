@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+   <isExposed>true</isExposed>
+<targets>
+	<target>lightning__RecordPage</target>
+</targets>
+<targetConfigs>
+	<targetConfig targets="lightning__RecordPage">
+		<objects>
+			<object>Bear__c</object>
+		</objects>
+	</targetConfig>
+</targetConfigs>
+</LightningComponentBundle>
+
+ <!-- <isExposed>true</isExposed>
+    <targets>
+    <!<target>lightning__AppPage</target> -->
+    <!-- <target>lightning__RecordPage</target>
+    
+    </targets>
+    <targetConfigs>
+  
+  <targetConfig targets = "lightning__RecordPage">
+  <objects>
+  <object> Expense__c</object>
+  </objects>
+    
+    
+    </targetConfig>
+    
+    </targetConfigs> --> 
+
+	<!-- import { LightningElement, api, wire } from 'lwc';
+import { getRecord, getFieldValue } from 'lightning/uiRecordApi'
+// import CLIENT_FIELD from '@salesforce/schema/Expense__c.Client__c'
+const fields = [
+    'Expense__c.Client__c'
+];
+// import { getRecord } from 'lightning/uiRecordApi';
+// @wire(getRecord, { recordId: string, fields: string|string[], optionalFields?: string|string[])
+// propertyOrFunction
+
+export default class SharkComponent extends LightningElement {
+    @api recordId;
+    person;
+    @wire(getRecord, { recordId: '$recordId', fields })
+    client({ error, data }) {
+        if (error) {  
+        } else if (data) {
+            this.person = data.fields.client__c.value;
+        }
+    }
+    get personName() {
+        return (this.person) ? `${this.person} is the person you should contact` : `client`;
+    }
+
+
+} -->
