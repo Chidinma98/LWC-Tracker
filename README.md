@@ -1,2 +1,2 @@
 
-A salesforce project using Lightning Web Components that uses an app to keep track of animals.
+A salesforce project using Lightning Web Components that keeps track and stores information about various wildlife.
